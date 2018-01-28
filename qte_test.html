@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8" />
+<html>
+    <head> 
+        <script type="text/javascript">
+			//you can put JavaScript code here if you want to
+        </script>
+    </head>
+
+    <body style="background-color: #000000; margin:0 auto;">
+		<!--<div style="width:800px; margin:0 auto;">-->
+			<!-- main -->
+			<div id="main" style="position: relative; top: 60px; left: 450px; width: 372px; height: 526px; background-color: #000000;">
+				
+				<!-- glow effect images -->
+				<img id="glow_img_def" src="images/glowEffect/General-Potrait-Glow_Blue_100.png" style="position: absolute; top: -100px; left: -80px; width: 550px; height: 730px;">
+				<img id="glow_img_atk" src="images/glowEffect/General-Potrait-Glow_Red_100.png" style="display: none; position: absolute; top: -100px; left: -80px; width: 550px; height: 730px;">
+				
+				<!-- boss -->
+				<img id="boss_img" src="" style="position: absolute; border: 5px solid rgba( 255, 255, 255, 0.5 );">	
+				
+				<!-- combo -->
+				<div id="combo_number" style="position: absolute; top: 30px; left: 0px; width: 100%; height: 100%;"></div>
+				<img id="combo_word" src="images/combo_word.png" style="display: none; position: absolute;">	
+				
+				<!-- player portrait -->
+				<img id="player_portrait" src="images/heart.png" style="position: absolute; top: 550px; left: 0px;">
+				
+				<!-- hourglass -->
+				<div id="hourglass_main" style="margin-left: auto; margin-right: auto;">
+					<img id="hourglass_img" src="images/hourglass.png" style="position: absolute; top: 0px; left: 280px; opacity:0.5; filter: alpha(opacity=50);">	
+				</div>
+				
+				<!-- cover -->
+				<div id="cover" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: 5px solid; background-color: #000000; opacity:0.75; filter: alpha(opacity=75);">
+					<!-- attack/defend text images -->
+					<img id="attack_text_img" src="images/atk_txt.png" style="position: absolute; top: 100px; left: -10px;">
+					<img id="defend_text_img" src="images/def_txt.png" style="position: absolute; top: 100px; left: -10px;">
+					
+					<!-- win/lose text images -->
+					<img id="win_text_img" src="images/win_txt.png" style="position: absolute; top: 80px; left: -10px;">
+					<img id="lose_text_img" src="images/lose_txt.png" style="position: absolute; top: 80px; left: -10px;">
+				</div>
+				
+			<!--</div>-->
+		</div>
+
+		<!-- custom JavaScript -->
+		<script src="js/common_utility.js"></script>
+		<script src="js/custom_math.js"></script>
+		<script src="js/animation_manager.js"></script>        
+		<script src="js/ui_effect.js"></script>
+		<script src="js/qte_manager.js"></script>
+		<script src="js/main_game.js"></script>
+		
+		<!-- JavaScript libraries -->
+		<script src="js/jquery-1.11.1.min.js"></script>	
+		<script src="js/jquery-ui.min.js"></script>	
+		
+		<!-- executable JavaScript -->
+		<script type="text/javascript">
+			//run the game
+			var game = new Game();
+			game.Run();		
+		</script>
+		
+    </body>
+</html>
